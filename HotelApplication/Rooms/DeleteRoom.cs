@@ -46,6 +46,7 @@ namespace HotelApplication.Rooms
                 Console.WriteLine("Press Any Key to continue...");
                 Console.ResetColor();
                 Console.ReadKey();
+                break;
             }
         }
     }

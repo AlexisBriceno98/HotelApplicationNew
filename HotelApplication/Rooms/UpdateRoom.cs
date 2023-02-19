@@ -36,6 +36,7 @@ namespace HotelApplication.Rooms
                     continue;
                 }
 
+                Console.Clear();
                 Console.WriteLine("UPDATE TYPE");
                 Console.WriteLine("Please choose a new room type between: (1)Twin or (2)Triple");
                 Console.WriteLine("New Type (leave blank to keep the existing value): ");
@@ -48,6 +49,7 @@ namespace HotelApplication.Rooms
                     roomToUpdate.Type = (typeString);
                 }
 
+                Console.Clear();
                 Console.WriteLine("UPDATE DESCRIPTION");
                 Console.WriteLine("Please choose a new room description between: (1)Single Room or (2)Double Room");
                 Console.WriteLine("New Description (leave blank to keep the existing value): ");
@@ -60,6 +62,7 @@ namespace HotelApplication.Rooms
                     roomToUpdate.Description = (descriptionString);
                 }
 
+                Console.Clear();
                 Console.WriteLine("UPDATE BED AMOUNT");
                 Console.WriteLine("Does the room have an extra bed? (1)Yes or (2)No (leave blank to keep the existing value): ");
                 var bedString = Console.ReadLine();
@@ -78,6 +81,7 @@ namespace HotelApplication.Rooms
                 Console.WriteLine("Press Any Key to continue...");
                 Console.ResetColor();
                 Console.ReadKey();
+                break;
             }
         }
     }

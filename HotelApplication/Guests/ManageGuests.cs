@@ -18,7 +18,7 @@ namespace HotelApplication.Guests
         {
             while (true)
             {
-                Console.WriteLine("\nManage Guests");
+                Console.WriteLine("Manage Guests");
                 Console.WriteLine("Please select an option:");
                 Console.WriteLine("1. Create a new Guest");
                 Console.WriteLine("2. Read Guests");

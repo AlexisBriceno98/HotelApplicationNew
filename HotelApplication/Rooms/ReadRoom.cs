@@ -18,7 +18,8 @@ namespace HotelApplication.Rooms
         }
         public void ReadRooms()
         {
-
+            Console.Clear();
+            Console.WriteLine("=============");
             foreach (Room room in _dbContext.Rooms)
             {
                 Console.WriteLine($"Room ID: {room.RoomId}, Type: {room.Type}, Description: {room.Description}, Extra bed: {room.ExtraBed}");

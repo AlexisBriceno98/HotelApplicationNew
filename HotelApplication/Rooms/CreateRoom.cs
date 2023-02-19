@@ -17,6 +17,7 @@ namespace HotelApplication.Rooms
         }
         public void RoomCreation()
         {
+            Console.Clear();
             Console.WriteLine("Please enter the ID of the new room:");
             var roomNumber = Console.ReadLine();
 
@@ -35,19 +36,19 @@ namespace HotelApplication.Rooms
             }
 
             Console.Clear();
-            Console.WriteLine("Wish your description?");
-            Console.WriteLine("1: Single room");
-            Console.WriteLine("2: Double room");
+            Console.WriteLine("Room Description?");
+            Console.WriteLine("1: Single Room");
+            Console.WriteLine("2: Double Room");
             var description = Console.ReadLine();
-            string s = "1: Singelroom";
-            string b = "2: Doubleroom";
+            string s = "1: Singel Room";
+            string b = "2: Double Room";
             description = description == "1" ? s : description == "2" ? b : null;
             if (type == null)
             {
                 Console.WriteLine("Please use only the options (1) or (2)");
             }
 
-
+            Console.Clear();
             Console.WriteLine("Do you wish an extra bed?");
             Console.WriteLine("1: YES");
             Console.WriteLine("2: NO");
