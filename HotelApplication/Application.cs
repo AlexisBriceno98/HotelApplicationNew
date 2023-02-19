@@ -39,6 +39,7 @@ namespace HotelApplication
                         manageGuests.GuestsManager();
                         break;
                     case 3:
+                        Console.Clear();
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine("Thank you for visiting the Hotel California...");
                         Console.ResetColor();

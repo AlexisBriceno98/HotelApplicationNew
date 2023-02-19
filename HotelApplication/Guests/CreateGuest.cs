@@ -19,12 +19,13 @@ namespace HotelApplication.Guests
         }
         public void GuestCreate()
         {
+            Console.Clear();
             Console.WriteLine("Please Enter the details of the new guest:");
-            Console.WriteLine("ID: ");
+            Console.WriteLine("\nID: ");
             var id = Console.ReadLine();
-            Console.WriteLine("Full Name: ");
+            Console.WriteLine("\nFull Name: ");
             var name = Console.ReadLine();
-            Console.WriteLine("Age: ");
+            Console.WriteLine("\nAge: ");
             var age = Convert.ToInt32(Console.ReadLine());
 
             Guest newGuest = new Guest { GuestId = id, Name = name, Age = age};

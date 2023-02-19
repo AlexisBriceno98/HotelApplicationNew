@@ -17,6 +17,9 @@ namespace HotelApplication.Guests
         }
         public void GuestDelete()
         {
+            Console.Clear();
+            var guestRead = new ReadGuest(_dbContext);
+            guestRead.GuestRead();
             Console.WriteLine("Enter the ID of the guest you want to delete: ");
             var id = Console.ReadLine();
 

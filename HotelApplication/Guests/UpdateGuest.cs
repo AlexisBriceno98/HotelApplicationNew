@@ -19,7 +19,10 @@ namespace HotelApplication.Guests
         {
             while (true)
             {
-                Console.Write("Enter the ID of the guest you want to update: ");
+                Console.Clear();
+                var guestRead = new ReadGuest(_dbContext);
+                guestRead.GuestRead();
+                Console.Write("\nEnter the ID of the guest you want to update: ");
                 var id = Console.ReadLine();
                 Guest guestToUpdate = _dbContext.Guests.Find(id);
                 if (guestToUpdate == null)
@@ -30,14 +33,14 @@ namespace HotelApplication.Guests
                     continue;
                 }
 
-                Console.WriteLine("New Full Name (leave blank to keep the existing value): ");
+                Console.WriteLine("\nNew Full Name (leave blank to keep the existing value): ");
                 var name = Console.ReadLine();
                 if (!string.IsNullOrWhiteSpace(name))
                 {
                     guestToUpdate.Name = name;
                 }
 
-                Console.WriteLine("New Age (leave blank to keep the existing value): ");
+                Console.WriteLine("\nNew Age (leave blank to keep the existing value): ");
                 string age = Console.ReadLine();
                 if (!string.IsNullOrWhiteSpace(age))
                 {
@@ -62,6 +65,8 @@ namespace HotelApplication.Guests
                 Console.WriteLine("Press Any Key to continue");
                 Console.ResetColor();
                 Console.ReadKey();
+
+                break;
             }
         }
     }

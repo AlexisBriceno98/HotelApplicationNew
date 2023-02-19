@@ -54,6 +54,7 @@ namespace HotelApplication.Rooms
                         roomDelete.RoomDelete();
                         break;
                     case 5:
+                        Console.Clear();
                         return;
                     default:
                         Console.WriteLine("Invalid option, please try again.");

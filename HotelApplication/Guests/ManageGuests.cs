@@ -18,6 +18,7 @@ namespace HotelApplication.Guests
         {
             while (true)
             {
+                Console.Clear();
                 Console.WriteLine("Manage Guests");
                 Console.WriteLine("Please select an option:");
                 Console.WriteLine("1. Create a new Guest");
@@ -49,6 +50,7 @@ namespace HotelApplication.Guests
                         deleteGuest.GuestDelete();
                         break;
                     case 5:
+                        Console.Clear();
                         return;
                     default:
                         Console.WriteLine("Invalid option, please try again.");
